@@ -13,7 +13,12 @@ Easy to use, simple API for acessing data from Twitch TV; data is acessible with
 | <h4>number_of_channels()</h4> | Get the number of channels where this Game is being played. |
 | <h4>rank()</h4> | Get Game's rank in the top 10 Games by viewer count <br/> (returns -1 if game is not in top 10 by viewer count)|
 | <h4>average_viewers_per_channel()</h4> | Get the average viewers per channel that is playing this Game |
-
+| <h4>small_box_image()</h4> | Get url to a 52x72 JPEG of Games's box image |
+| <h4>medium_box_image()</h4> | Get url to a 136x190 JPEG of Games's box image |
+| <h4>large_box_image()</h4> | Get url to a 272x380 JPEG of Games's box image |
+| <h4>small_logo_image()</h4> | Get url to a 60x36 JPEG of Games's logo image |
+| <h4>medium_logo_image()</h4> | Get url to a 120x72 JPEG of Games's logo image |
+| <h4>large_logo_image()</h4> | Get url to a 240x144 JPEG of Games's logo image |
 
 ## Channel <i>(Class)</i>
 
