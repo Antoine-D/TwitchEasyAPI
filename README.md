@@ -63,7 +63,7 @@ Returns an array of the top <b><i>n</i></b> Channels by viewership.
 
 
 
-### <a name='topGames'>top_n_Gamess( <i>$n</i> )
+### <a name='topGames'>top_n_Games( <i>$n</i> )
 Returns an array of the top <b><i>n</i></b> Games by viewership.
 
 ####Paramaters:
