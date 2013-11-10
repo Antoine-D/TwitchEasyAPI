@@ -34,17 +34,17 @@ Easy to use, simple API for acessing data from Twitch TV; data is acessible with
 
 | Functions | Description |
 | ---- | --------------- |
-| [top_n_Channels( <i>$n</i> )](/README.md#top_n_Channels\(\)) | Get the current top <i>n</i> channels by viewership <br/> (<i>n</i> must be [1:25])|
-| [top_n_Games( <i>$n</i> )](/README.md#top_n_Games\(\)) | Get the current top <i>n</i> games by viewership <br/> (<i>n</i> must be [1:10])|
+| [top_n_Channels( <i>$n</i> )](#top_n_Channels) | Get the current top <i>n</i> channels by viewership <br/> (<i>n</i> must be [1:25])|
+| [top_n_Games( <i>$n</i> )](#top_n_Games) | Get the current top <i>n</i> games by viewership <br/> (<i>n</i> must be [1:10])|
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ##Function Details
 
-#### `top_n_Channels()`
+#### `top_n_Channels`
 Returns a list of blocks objects on `:login`'s block list. List sorted by recency, newest first.
 
-#### `top_n_Games()`
+#### `top_n_Games`
 Returns a list of blocks objects on `:login`'s block list. List sorted by recency, newest first.
 fgsgfsdfg
