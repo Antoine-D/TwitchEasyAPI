@@ -38,11 +38,49 @@ Easy to use, simple API for acessing data from Twitch TV; data is acessible with
 | [top_n_Games( <i>$n</i> )](#topGames) | Get the current top <i>n</i> games by viewership <br/> (<i>n</i> must be [1:10])|
 
 
-##Function Details
+##Function Details <br />
 
-#### <a name='topChannels'>top_n_Channels
-Returns a list of blocks objects on `:login`'s block list. List sorted by recency, newest first.
+### <a name='topChannels'>top_n_Channels( <i>$n</i> )
+Returns an array of the top <b><i>n</i></b> Channels by viewership.
 
-#### <a name='topGames'>top_n_Games
-Returns a list of blocks objects on `:login`'s block list. List sorted by recency, newest first.
-fgsgfsdfg
+####Paramaters:
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>n</code></td>
+            <td>integer</td>
+            <td>Number of top Channels you want in return array. <b>Must be in [1:25] or empty array is returned.</b></td>
+        </tr>
+    </tbody>
+</table> <br />
+
+
+
+### <a name='topGames'>top_n_Gamess( <i>$n</i> )
+Returns an array of the top <b><i>n</i></b> Games by viewership.
+
+####Paramaters:
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>n</code></td>
+            <td>integer</td>
+            <td>Number of top Games you want in return array. <b>Must be in [1:10] or empty array is returned.</b></td>
+        </tr>
+    </tbody>
+</table> <br />
+
