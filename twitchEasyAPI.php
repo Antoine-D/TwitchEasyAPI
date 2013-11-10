@@ -8,6 +8,16 @@
 		
 		private $game_rank = -1;
 
+		/*Game Box*/
+		private $smallBoxImageURL = "";
+		private $mediumBoxImageURL = "";
+		private $largeBoxImageURL = "";
+
+		/*Game Logo*/
+		private $smallLogoImageURL = "";
+		private $mediumLogoImageURL = "";
+		private $largeLogoImageURL = "";
+
 		function __construct($gameName, $viewerCount, $channelCount) {
 			$this->game_name = $gameName;
 			$this->game_viewers = $viewerCount;
@@ -42,6 +52,48 @@
 			else {
 				return number_format(bcdiv($this->game_viewers, $this->game_channels, 3), 2);
 			}
+		}
+
+
+
+				/* Box Images */
+		function small_box_image() {
+			return $this->smallBoxImageURL;
+		}
+
+		function medium_box_image() {
+			return $this->mediumBoxImageURL;
+		}
+
+		function large_box_image() {
+			return $this->largeBoxImageURL;
+		}
+
+		function setBoxImages($small, $medium, $large) {
+			$this->smallBoxImageURL = $small;
+			$this->mediumBoxImageURL = $medium;
+			$this->largeBoxImageURL = $large;
+		}
+
+
+
+				/*Logo Images */
+		function small_logo_image() {
+			return $this->smallLogoImageURL;
+		}
+
+		function medium_logo_image() {
+			return $this->mediumLogoImageURL;
+		}
+
+		function large_logo_image() {
+			return $this->largeLogoImageURL;
+		}
+
+		function setLogoImages($small, $medium, $large) {
+			$this->smallLogoImageURL = $small;
+			$this->mediumLogoImageURL = $medium;
+			$this->largeLogoImageURL = $large;
 		}
 
 	}
@@ -84,6 +136,12 @@
 			return $this->channel_rank;
 		}
 
+		function setImages($small, $medium, $large) {
+			$this->smallPreviewImageURL = $small;
+			$this->mediumPreviewImageURL = $medium;
+			$this->largePreviewImageURL = $large;
+		}
+
 		function small_preview_image() {
 			return $this->smallPreviewImageURL;
 		}
@@ -112,6 +170,8 @@
 			while($incrementor < $n) {
 				$topChannels[$incrementor] = new Channel($streams->streams[$incrementor]->channel->name, $streams->streams[$incrementor]->channel->game, $streams->streams[$incrementor]->viewers);
 				$topChannels[$incrementor]->set_rank($incrementor + 1);
+				$topChannels[$incrementor]->setImages($streams->streams[$incrementor]->preview->small, $streams->streams[$incrementor]->preview->medium, $streams->streams[$incrementor]->preview->large);
+
 				$incrementor++;
 			}
 
@@ -137,6 +197,9 @@
 			while($incrementor < $n) {
 				$topGames[$incrementor] = new Game($games->top[$incrementor]->game->name, $games->top[$incrementor]->viewers, $games->top[$incrementor]->channels);
 				$topGames[$incrementor]->set_rank($incrementor + 1);
+				$topGames[$incrementor]->setBoxImages($games->top[$incrementor]->game->box->small, $games->top[$incrementor]->game->box->medium, $games->top[$incrementor]->game->box->large);
+				$topGames[$incrementor]->setLogoImages($games->top[$incrementor]->game->logo->small, $games->top[$incrementor]->game->logo->medium, $games->top[$incrementor]->game->logo->large);
+				
 				$incrementor++;
 			}
 
