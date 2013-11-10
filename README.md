@@ -42,9 +42,9 @@ Easy to use, simple API for acessing data from Twitch TV; data is acessible with
 
 ##Function Details
 
-#### `top_n_Channels`
+#### <a name='topChannels'>top_n_Channels
 Returns a list of blocks objects on `:login`'s block list. List sorted by recency, newest first.
 
-#### `top_n_Games`
+#### <a name='topGames'>top_n_Games
 Returns a list of blocks objects on `:login`'s block list. List sorted by recency, newest first.
 fgsgfsdfg
