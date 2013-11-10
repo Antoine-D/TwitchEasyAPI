@@ -38,8 +38,6 @@ Easy to use, simple API for acessing data from Twitch TV; data is acessible with
 | [top_n_Games( <i>$n</i> )](#topGames) | Get the current top <i>n</i> games by viewership <br/> (<i>n</i> must be [1:10])|
 
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
 ##Function Details
 
 #### <a name='topChannels'>top_n_Channels
