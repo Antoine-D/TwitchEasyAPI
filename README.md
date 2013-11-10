@@ -3,7 +3,7 @@ TwitchEasyAPI
 
 Easy to use, simple API for acessing data from Twitch TV; data is acessible with php function calls instead of parsing through messy JSON files.
 
-<a href="http://www.antoinedahan.com/TwitchEasyAPI/test.php">Example of useage</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example of useage:&nbsp; <a href="http://www.antoinedahan.com/TwitchEasyAPI/test.php">test.php</a>
 
 ##  Game  <i>(Class)</i>
 
