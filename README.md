@@ -4,7 +4,7 @@ TwitchEasyAPI
 Easy to use, simple API for acessing data from Twitch TV; data is acessible with php function calls instead of parsing through messy JSON files.
 
 
-##  Game
+##  Game  <i>(Class)</i>
 
 | Functions | Description |
 | ---- | --------------- |
@@ -15,7 +15,7 @@ Easy to use, simple API for acessing data from Twitch TV; data is acessible with
 | <h4>average_viewers_per_channel()</h4> | Get the average viewers per channel that is playing this Game |
 
 
-## Channel
+## Channel <i>(Class)</i>
 
 | Functions | Description |
 | ---- | --------------- |
