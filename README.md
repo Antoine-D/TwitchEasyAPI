@@ -28,7 +28,7 @@ Easy to use, simple API for acessing data from Twitch TV; data is acessible with
 | <h4>large_preview_image()</h4> | Get url to a 640x400 JPEG of Channel's preview image |
 
 
-## Useful Functions
+## Extra Functions
 
 | Functions | Description |
 | ---- | --------------- |
